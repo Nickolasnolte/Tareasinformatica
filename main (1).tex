@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Hoja de Trabajo 1}
+\author{Christopher Tobar/ Nickolas Nolte }
+\date{Julio 30 2019}
+\begin{document}
+
+\maketitle
+
+\section{Conjunto de Nodos}
+\begin{itemize}
+    \item 
+
+        (1,1)\quad(1,2)\quad(1,3)\quad(1,4)\quad(1,5)\quad(1,6)\\
+        (2,2)\quad(2,1)\quad(2,3)\quad(2,4)\quad(2,5)\quad(2,6)\\
+        (3,3)\quad(3,1)\quad(3,2)\quad(3,4)\quad
+        (3,5)\quad(3,6)\\
+        (4,4)\quad(4,1)\quad(4,2)\quad(4,3)\quad(4,5)\quad(4,6)\\  
+        (5,5)\quad(5,1)\quad(5,2)\quad(5,3)\quad(5,4)\quad(5,6)\\
+        (6,6)\quad(6,1)\quad(6,2)\quad(6,3)\quad(6,4)\quad(6,5)\\
+\end{itemize}
+
+
+\section{Conjunto de Vertices}
+\begin{itemize}
+    \item 
+
+$<$(1,1),(1,2)$>$     $<$(1,1),(1,3)$>$     $<$(1,1),(1,4)$>$     $<$(1,1),(1,5)$>$     $<$(1,1),(1,6)$>$\\
+$<$(2,2),(2,1)$>$     $<$(2,2),(2,3)$>$     $<$(2,2),(2,4)$>$     $<$(2,2),(2,5)$>$     $<$(2,2),(2,6)$>$\\
+$<$(3,3),(3,1)$>$     $<$(3,3),(3,2)$>$     $<$(3,3),(3,4)$>$     $<$(3,3),(3,5)$>$    $<$(3,3),(3,6)$>$\\
+$<$(4,4),(4,1)$>$     $<$(4,4),(4,2)$>$     $<$(44),(4,3)$>$     $<$(4,4),(4,5)$>$    $<$(4,4),(4,6)$>$\\
+$<$(5,5),(5,1)$>$     $<$(5,5),(5,2)$>$     $<$(5,5),(5,3)$>$     $<$(5,5),(5,4)$>$    $<$(5,5),(5,6)$>$\\
+$<$(6,6),(6,1)$>$     $<$(6,6),(6,2)$>$     $<$(6,6),(6,3)$>$     $<$(6,6),(6,4)$>$    $<$(6,6),(6,5)$>$\\
+
+\end{itemize}
+
+
+\section{Algoritmo}
+\begin{itemize}
+        
+        \item{¿Que algoritmo podriamos utilizar para generar dicha estructura?}
+        
+
+      
+\begin{enumerate}
+\item   INICIO//
+\item          Ambos dados empiezan estáticos y con un número ubicado en la cara que está en la superficie. Este es un número entre  1 y 6 representado con puntos. \\
+\item         Se toma un dado únicamente para que rote 90 grados sobre él mismo aleatoriamente en cualquiera de los cuatro posibles ángulos de rotación. Este proceso se repite indefinidamente por un corto lapso de tiempo. \\
+\item         Cuando la rotación del dado se detenga, la cara que está en la superficie indicará el número que será tomado en cuenta.\\
+\item         Luego se tomará el segundo dado y este seguirá el mismo proceso. Se repetirá el paso 3 y 4 con el segundo dado\\
+\item         Luego se deben de sumar entre si los resultados de cada dado para formar uno solo.\\
+\item         El resultado final de la suma de los dos dados será el número que deberá tomarse en cuenta para la acción que se está realizando.\\
+\item         FIN\\
+\end{enumerate}
+
+        \item{¿Como nos aseguramos que ese algoritmo siempre produce un resultado?}\\
+	
+\begin{enumerate}
+\item Cada dado produce un resultado y la suma de los dados nos da una suma final, el paso 2,3,y 4 asegura que cada vez el lanzamiento de los dados produzca un nuevo resultado.
+\end{enumerate}
+\end{itemize}
+
+\end{document}
