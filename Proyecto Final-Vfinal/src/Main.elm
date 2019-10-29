@@ -1,3 +1,5 @@
+Nickolas Nolte y Javier Escobar
+
 module Main exposing (..)
 
 
